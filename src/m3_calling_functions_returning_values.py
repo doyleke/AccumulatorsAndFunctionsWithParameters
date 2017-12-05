@@ -182,7 +182,7 @@ def digits_in_cube(n):
     """
 
     cube = n**3
-    return(sum_of_digits(cube))
+    return sum_of_digits(cube)
 
     # ------------------------------------------------------------------
     # DONE: 4. Implement and test this function.
@@ -212,18 +212,18 @@ def run_test_digits_in_power():
 
     # Test 1
     expected = 8
-    answer = digits_in_power(2,3)
+    answer = digits_in_power(2, 3)
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
 
     # Test 2
-    answer = digits_in_power(3,4)
+    answer = digits_in_power(3, 4)
     expected = 9
     print('Test 2 expected:', expected)
     print('       actual:  ', answer)
 
     # Test 3
-    answer = digits_in_power(4,5)
+    answer = digits_in_power(4, 5)
     expected = 7
     print('Test 3 expected:', expected)
     print('       actual:  ', answer)
@@ -242,7 +242,7 @@ def digits_in_power(n, k):
     """
     cube = n**k
     cube_sum = sum_of_digits(cube)
-    return(sum_of_digits(cube_sum))
+    return sum_of_digits(cube_sum)
 
     # ------------------------------------------------------------------
     # DONE: 6. Implement and test this function.
@@ -295,6 +295,7 @@ def run_test_fancy_sums_of_digits():
     print('Test 2 expected:', expected)
     print('       actual:  ', answer)
 
+
 def fancy_sums_of_digits(n):
     """
     What comes in:  A positive integer n.
@@ -328,9 +329,10 @@ def fancy_sums_of_digits(n):
     ####################################################################
     # ------------------------------------------------------------------
 
-    X = sum_of_digits(n**1000)
-    Y = sum_of_digits(n**999)
-    return (sum_of_digits(X**Y))
+    x = sum_of_digits(n**1000)
+    y = sum_of_digits(n**999)
+    return sum_of_digits(x**y)
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
